@@ -1,0 +1,8 @@
+
+.bg-red{
+    background-color: rgb(255, 0, 0) !important; 
+}
+.size-color--button{
+    height: 2rem;
+    width: 2rem;
+}
