@@ -37,7 +37,7 @@
       </div>
     </div>
   </div>
-  
+
   <header>
     <nav class="navbar navbar-expand-lg bgh-blue fixed-top">
       <div class="container px-4 px-lg-5 ">
@@ -51,20 +51,22 @@
             <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#!">All games</a></li>
           </ul>
-          <form class="d-flex">
+          <div class="d-flex" style="height: 2.5rem;">
+            <input type="text" class="form-control form-control-sm" height="15" name="" id="">
             <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#carrito"
               aria-controls="carrito">
               <i class="bi-cart-fill me-1"></i>
               Cart
-              <span class="badge bg-white text-white ms-1 rounded-pill" id="contador"> <span class="text-dark">0</span></span>
+              <span class="badge bg-white text-white ms-1 rounded-pill" id="contador"> <span
+                  class="text-dark">0</span></span>
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </nav>
   </header>
 
-  <main class="bgh-dark-blue">
+  <main class="bgh-dark-blue ">
     <section class="py-5 text-center container mt-5">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto text-light py-5">
@@ -76,9 +78,9 @@
       </div>
     </section>
 
-    <div class="album  bgh-blue text-light">
+    <div class="album bgh-blue text-light">
       <div class="container px-4 py-5" id="listaArticulos">
-        <h2 class="pb-2 border-bottom bolder">Best Sellers</h2>
+        <h2 class="pb-2 fw-bol border-bottom bolder">Best Sellers</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-md-3 row-cols-lg-3">
           <div class="col">
             <div class="card  border-none ">
@@ -145,16 +147,42 @@
     </div>
   </main>
 
-  <footer class="text-light">
-    <div class="container py-5 px-4">
-      <p class="float-end mb-1 th-light-orange ">
-        <a href="#">Back to top</a>
-      </p>
-      <p class="mb-1 th-light-orange ">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-      <p class="mb-0 th-light-orange ">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-          href="/docs/5.3/getting-started/introduction/">getting started guide</a>.</p>
+  <div class="bgh-darkest-blue">
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Buy</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">How to buy?</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">List of games</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>About Hanta</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About us</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Help</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Create a ticket</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <img class="img-fluid mx-auto d-block" src="../img/logo.png" width="300" alt="">
+            <span class="text-center d-block text-light fw-bold">© Hanta Store 2024</span>
+          </div>
+        </div>
+      </footer>
     </div>
-  </footer>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
@@ -163,5 +191,4 @@
     crossorigin="anonymous"></script>
   <script src="app.js"></script>
 </body>
-
 </html>
