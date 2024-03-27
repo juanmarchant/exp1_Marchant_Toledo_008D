@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TechGrip</title>
+  <title>Buy games and wallets more cheaper than ever | Hanta Store</title>
   <link rel="stylesheet" href="../styles/main.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,6 +13,7 @@
 
 <body>
   <div class="offcanvas offcanvas-end" tabindex="-1" id="carrito">
+
     <div class="offcanvas-header">
       <h5 id="offcanvasRightLabel">Cart</h5>
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -31,66 +32,57 @@
         <tbody></tbody>
       </table>
       <div class="d-grid gap-2">
-        <a href="#" class="btn btn-primary text-white text-center">Pay by credit card</a>
+        <a href="#" class="btn btn-primary text-white text-center">Pay</a>
         <a href="#" class="btn btn-secondary text-white text-center" id="vaciarCarrito">Clear</a>
       </div>
     </div>
   </div>
+  
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#!">TechGrip</a>
+    <nav class="navbar navbar-expand-lg bgh-blue fixed-top">
+      <div class="container px-4 px-lg-5 ">
+        <a class="navbar-brand" href="#!"><img src="../img/logo.png" height="50" alt="Hanta Store"></a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="navbar-collapse collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+          aria-label="Toggle navigation" data-bs-theme="dark"><span class="navbar-toggler-icon "></span></button>
+        <div class="navbar-collapse collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 ">
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#!">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Shop</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#!">All Products</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
-                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
-              </ul>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="#!">All games</a></li>
           </ul>
           <form class="d-flex">
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#carrito"
+            <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#carrito"
               aria-controls="carrito">
               <i class="bi-cart-fill me-1"></i>
               Cart
-              <span class="badge bg-primary text-white ms-1 rounded-pill" id="contador">0</span>
+              <span class="badge bg-white text-white ms-1 rounded-pill" id="contador"> <span class="text-dark">0</span></span>
             </button>
           </form>
         </div>
       </div>
     </nav>
   </header>
-  <main>
+
+  <main class="bgh-dark-blue">
     <section class="py-5 text-center container mt-5">
       <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">TechGrip</h1>
-          <p class="lead text-body-secondary">Unveiling Technological Excellence: Our Collection of Innovative Mousepads
+        <div class="col-lg-6 col-md-8 mx-auto text-light py-5">
+          <h1 class="">Hanta Store</h1>
+          <p>Unveiling Technological Excellence: Our Collection of Innovative Mousepads
             and Mice. Crafted to elevate your performance and comfort. Explore now and take your digital experience to
             the next level.</p>
         </div>
       </div>
     </section>
 
-    <div class="album py-5 bg-body-tertiary">
-      <div class="container" id="listaArticulos">
-        <h2>Best Sellers</h2>
-        <div class="row row-cols-1 row row-cols-md-3 g-3 justify-content-between   ">
-          <div class="col" style="width: 25rem">
-            <div class="card shadow-sm">
-              <img class="card-img-top object-fit-contain" src="../img/BaldursGateIII.jpg" alt="" />
+    <div class="album  bgh-blue text-light">
+      <div class="container px-4 py-5" id="listaArticulos">
+        <h2 class="pb-2 border-bottom bolder">Best Sellers</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-md-3 row-cols-lg-3">
+          <div class="col">
+            <div class="card  border-none ">
+              <img class="card-img-top object-fit-contain " src="../img/BaldursGateIII.jpg" alt="" />
               <div class="card-body">
                 <h5 class="card-title">Pulsar</h5>
                 <p class="card-text text-truncate" style="max-width: 100%">X2 Wireless Gaming Mouse</p>
@@ -109,9 +101,9 @@
               </div>
             </div>
           </div>
-          <div class="col" style="width: 25rem">
-            <div class="card shadow-sm">
-              <img class="card-img-top object-fit-contain" src="../img/BaldursGateIII.jpg" alt="" />
+          <div class="col">
+            <div class="card ">
+              <img class="card-img-top object-fit-contain" src="../img/helldivers2.jpg" alt="" />
               <div class="card-body">
                 <h5 class="card-title">Endgame Gear</h5>
                 <p class="card-text text-truncate" style="max-width: 100%">XM2 Wireless Gaming Mouse</p>
@@ -128,8 +120,8 @@
               </div>
             </div>
           </div>
-          <div class="col" style="width: 25rem">
-            <div class="card shadow-sm">
+          <div class="col">
+            <div class="card ">
               <img class="card-img-top object-fit-contain" src="../img/BaldursGateIII.jpg" alt="" />
               <div class="card-body">
                 <h5 class="card-title">Zowie</h5>
@@ -153,13 +145,13 @@
     </div>
   </main>
 
-  <footer class="text-body-secondary py-5">
-    <div class="container">
-      <p class="float-end mb-1">
+  <footer class="text-light">
+    <div class="container py-5 px-4">
+      <p class="float-end mb-1 th-light-orange ">
         <a href="#">Back to top</a>
       </p>
-      <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-      <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
+      <p class="mb-1 th-light-orange ">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+      <p class="mb-0 th-light-orange ">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
           href="/docs/5.3/getting-started/introduction/">getting started guide</a>.</p>
     </div>
   </footer>

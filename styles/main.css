@@ -1,8 +1,54 @@
+@import url('../styles/satoshi.css');
 
-.bg-red{
-    background-color: rgb(255, 0, 0) !important; 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Satoshi-Variable';
 }
-.size-color--button{
+.card{
+    border: 0px !important;
+    border-radius: 0px !important;
+    box-shadow: 0px 0px 15px 1px #1C3269;
+}
+
+.card img{
+    border-radius: 0px !important;
+}
+
+.th-blue {
+    color: #264592;
+}
+
+.bgh-blue {
+    background-color: #244494;
+}
+
+.bgh-dark-blue {
+    background-color: #1C3269;
+}
+
+.size-color--button {
     height: 2rem;
     width: 2rem;
+}
+
+.navbar li a {
+    color: white !important;
+}
+
+.navbar li a:hover {
+    color: orange !important;
+}
+
+footer a {
+    font-weight: bolder;
+    color: orange !important;
+}
+
+footer {
+    background-color: #001446;
+}
+
+.navbar-toggler {
+    color: white !important;
 }
