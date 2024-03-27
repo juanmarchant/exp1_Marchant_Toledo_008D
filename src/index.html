@@ -7,6 +7,7 @@
   <title>Buy games and wallets more cheaper than ever | Hanta Store</title>
   <link rel="stylesheet" href="../styles/main.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
 </head>
@@ -52,14 +53,17 @@
             <li class="nav-item"><a class="nav-link" href="#!">All games</a></li>
           </ul>
           <div class="d-flex" style="height: 2.5rem;">
-            <input type="text" class="form-control form-control-sm" height="15" name="" id="">
-            <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#carrito"
-              aria-controls="carrito">
-              <i class="bi-cart-fill me-1"></i>
-              Cart
-              <span class="badge bg-white text-white ms-1 rounded-pill" id="contador"> <span
-                  class="text-dark">0</span></span>
-            </button>
+            <input type="text" class="form-control me-md-4 me-lg-4" placeholder="Search Game" name="" id="">
+
+            <div class="d-sm-block" style="width: 10.5rem;">
+              <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#carrito"
+                aria-controls="carrito">
+                <i class="bi-cart-fill me-1"></i>
+                Cart
+                <span class="badge bg-white text-white ms-1 rounded-pill" id="contador"> <span
+                    class="text-dark">0</span></span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -67,7 +71,7 @@
   </header>
 
   <main class="bgh-dark-blue ">
-    <section class="py-5 text-center container mt-5">
+    <!-- <section class="py-5 text-center container mt-5">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto text-light py-5">
           <h1 class="">Hanta Store</h1>
@@ -76,17 +80,39 @@
             the next level.</p>
         </div>
       </div>
-    </section>
+    </section> -->
+
+    <div id="carouselExampleIndicators" class="carousel slide mt-5">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" style="height: 25rem;">
+        <div class="carousel-item active ">
+          <img  src="../img/BaldursGateIII.jpg"  class="d-block w-100 object-fit-contain"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/helldivers2.jpg" class="d-block w-100  object-fit-contain" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/gtav.jpg" class="d-block w-100 object-fit-contain" alt="...">
+        </div>
+      </div>
+    </div>
 
     <div class="album bgh-blue text-light">
       <div class="container px-4 py-5" id="listaArticulos">
         <h2 class="pb-2 fw-bol border-bottom bolder">Best Sellers</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-md-3 row-cols-lg-3">
           <div class="col">
-            <div class="card  border-none ">
+            <div class="card border-none ">
               <img class="card-img-top object-fit-contain " src="../img/BaldursGateIII.jpg" alt="" />
               <div class="card-body">
-                <h5 class="card-title">Pulsar</h5>
+                <h5 class="card-title">Baldurs Gate III</h5>
                 <p class="card-text text-truncate" style="max-width: 100%">X2 Wireless Gaming Mouse</p>
                 <div class="btn-group mb-3">
                   <button type="button"
@@ -191,4 +217,5 @@
     crossorigin="anonymous"></script>
   <script src="app.js"></script>
 </body>
+
 </html>
