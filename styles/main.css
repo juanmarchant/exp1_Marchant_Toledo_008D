@@ -18,6 +18,10 @@
     background-color: #001446;
 }
 
+.border-top-orange{
+    border-top: 5px solid orange;
+}
+
 .card {
     border: 0px !important;
     border-radius: 0px !important;
