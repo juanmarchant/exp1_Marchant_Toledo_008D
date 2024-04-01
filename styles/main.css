@@ -87,6 +87,26 @@
     color: white !important;
 }
 
+.product{
+    background-color: white ;
+}
+
+.product:hover{
+    background-color: #E9ECEF;
+    transition: 0.7s;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.product:hover img{
+    filter: grayscale(75%);
+}
+
+.product:hover .price{
+    color: #244494;
+    transition: 0.7s;
+}
+
 
 footer {
     background-color: #001446;
