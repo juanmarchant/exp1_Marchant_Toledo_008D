@@ -12,7 +12,7 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
 </head>
 
-<body>
+<body class="bg-body-secondary">
     <div class="offcanvas offcanvas-end" tabindex="-1" id="carrito">
         <div class="offcanvas-header">
             <h5 id="offcanvasRightLabel">Cart</h5>
@@ -59,8 +59,9 @@
                                 data-bs-target="#carrito" aria-controls="carrito">
                                 <i class="bi-cart-fill me-1"></i>
                                 Cart
-                                <span class="badge bg-white text-white ms-1 rounded-pill" id="contador"> <span
-                                        class="text-dark">0</span></span>
+                                <span class="badge bg-white text-white ms-1 rounded-pill" id="contador">
+                                    <span class="text-dark">0</span>
+                                </span>
                             </button>
                         </div>
                     </div>
@@ -69,124 +70,254 @@
         </nav>
     </header>
 
-    <section class="container mt-5 py-5">
-        <div class="row row-cols-1 row-cols-lg-2 p-5">
-            <div class="col col-lg-3 rounded ">
-                <h2 class="th-blue text-start ">Games</h2>
-                <form action="">
-                    <div class="mt-3 text-start">
-                        <label class="form-label " for="search">Name</label>
-                        <input class="form-control" type="text" name="search">
-                    </div>
-                    <hr class="text-secondary ">
-                    <div class="mt-3 text-start">
-                        <div class="shadow rounded p-3">
-                            <label class="form-label" for="genreSelect">Category</label>
-                            <select class="form-select" name="category" id="">
-                                <option value="">Select</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                            </select>
+    <section class="container mt-5 py-5 ">
+        <div class="row row-cols-1 row-cols-lg-2 p-5 ">
+            <div class="col col-lg-3 rounded">
+                <div class="bg-white p-3 rounded border border-3">
+                    <h2 class="th-blue text-start ">Games</h2>
+                    <form action="">
+                        <div class="mt-3 text-start">
+                            <label class="form-label " for="search">Name</label>
+                            <input class="form-control" type="text" name="search">
                         </div>
-                    </div>
-                </form>
+                        <hr class="text-secondary ">
+                        <div class="mt-3 text-start">
+                            <div class="shadow rounded p-3">
+                                <label class="form-label" for="genreSelect">Category</label>
+                                <select class="form-select" name="category" id="">
+                                    <option value="">Select</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="col col-lg-9 bg-success vh-100">
+            <div class="col col-lg-9 min-vh-100 ">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4 p-sm-3 p-lg-0">
                     <div class="col rounded p-3">
-                        <div class="shadow">
+                        <div class="shadow rounded ">
                             <img src="../img/BaldursGateIII.jpg" class="w-100 rounded-top " alt="">
-                            <div class="bg-body-secondary p-2 rounded-bottom border-top-orange">
+                            <div class="bg-white p-2 rounded-bottom border-top-orange">
                                 <h5 class="text-start ">Baldurg Gate III</h5>
-                                <p class="card-text text-truncate text-uppercase" style="max-width: 100%;">
-                                    Baldur’s Gate 3 is a story-rich, party-based
-                                    RPG set in the universe of Dungeons & Dragons, where your choices shape a tale
-                                    of
-                                    fellowship and
-                                    betrayal, survival and sacrifice, and the lure of absolute power.
+                                <p class="card-text text-truncate text-uppercase fw-bold th-blue"
+                                    style="max-width: 100%;">
+                                    GLOBAL
                                 </p>
-                                <p class="fw-bold fs-3 text-start ">$99.99</p>
+                                <p class="fw-bold fs-4 text-start ">$99.99 USD</p>
 
                             </div>
                         </div>
                     </div>
                     <div class="col rounded p-3">
-                        <div class="shadow">
+                        <div class="shadow rounded ">
                             <img src="../img/BaldursGateIII.jpg" class="w-100 rounded-top " alt="">
-                            <div class="bg-body-secondary p-2 rounded-bottom border-top-orange">
+                            <div class="bg-white p-2 rounded-bottom border-top-orange">
                                 <h5 class="text-start ">Baldurg Gate III</h5>
-                                <p class="card-text text-truncate text-uppercase" style="max-width: 100%;">
-                                    Baldur’s Gate 3 is a story-rich, party-based
-                                    RPG set in the universe of Dungeons & Dragons, where your choices shape a tale
-                                    of
-                                    fellowship and
-                                    betrayal, survival and sacrifice, and the lure of absolute power.
+                                <p class="card-text text-truncate text-uppercase fw-bold th-blue"
+                                    style="max-width: 100%;">
+                                    GLOBAL
                                 </p>
-                                <p class="fw-bold fs-3 text-start ">$99.99</p>
+                                <p class="fw-bold fs-4 text-start ">$99.99 USD</p>
 
                             </div>
                         </div>
                     </div>
                     <div class="col rounded p-3">
-                        <div class="shadow">
+                        <div class="shadow rounded ">
                             <img src="../img/BaldursGateIII.jpg" class="w-100 rounded-top " alt="">
-                            <div class="bg-body-secondary p-2 rounded-bottom border-top-orange">
+                            <div class="bg-white p-2 rounded-bottom border-top-orange">
                                 <h5 class="text-start ">Baldurg Gate III</h5>
-                                <p class="card-text text-truncate text-uppercase" style="max-width: 100%;">
-                                    Baldur’s Gate 3 is a story-rich, party-based
-                                    RPG set in the universe of Dungeons & Dragons, where your choices shape a tale
-                                    of
-                                    fellowship and
-                                    betrayal, survival and sacrifice, and the lure of absolute power.
+                                <p class="card-text text-truncate text-uppercase fw-bold th-blue"
+                                    style="max-width: 100%;">
+                                    GLOBAL
                                 </p>
-                                <p class="fw-bold fs-3 text-start ">$99.99</p>
+                                <p class="fw-bold fs-4 text-start ">$99.99 USD</p>
 
                             </div>
                         </div>
                     </div>
                     <div class="col rounded p-3">
-                        <div class="shadow">
+                        <div class="shadow rounded ">
                             <img src="../img/BaldursGateIII.jpg" class="w-100 rounded-top " alt="">
-                            <div class="bg-body-secondary p-2 rounded-bottom border-top-orange">
+                            <div class="bg-white p-2 rounded-bottom border-top-orange">
                                 <h5 class="text-start ">Baldurg Gate III</h5>
-                                <p class="card-text text-truncate text-uppercase" style="max-width: 100%;">
-                                    Baldur’s Gate 3 is a story-rich, party-based
-                                    RPG set in the universe of Dungeons & Dragons, where your choices shape a tale
-                                    of
-                                    fellowship and
-                                    betrayal, survival and sacrifice, and the lure of absolute power.
+                                <p class="card-text text-truncate text-uppercase fw-bold th-blue"
+                                    style="max-width: 100%;">
+                                    GLOBAL
                                 </p>
-                                <p class="fw-bold fs-3 text-start ">$99.99</p>
+                                <p class="fw-bold fs-4 text-start ">$99.99 USD</p>
 
                             </div>
                         </div>
                     </div>
+                    <div class="col rounded p-3">
+                        <div class="shadow rounded ">
+                            <img src="../img/BaldursGateIII.jpg" class="w-100 rounded-top " alt="">
+                            <div class="bg-white p-2 rounded-bottom border-top-orange">
+                                <h5 class="text-start ">Baldurg Gate III</h5>
+                                <p class="card-text text-truncate text-uppercase fw-bold th-blue"
+                                    style="max-width: 100%;">
+                                    GLOBAL
+                                </p>
+                                <p class="fw-bold fs-4 text-start ">$99.99 USD</p>
 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col rounded p-3">
+                        <div class="shadow rounded ">
+                            <img src="../img/BaldursGateIII.jpg" class="w-100 rounded-top " alt="">
+                            <div class="bg-white p-2 rounded-bottom border-top-orange">
+                                <h5 class="text-start ">Baldurg Gate III</h5>
+                                <p class="card-text text-truncate text-uppercase fw-bold th-blue"
+                                    style="max-width: 100%;">
+                                    GLOBAL
+                                </p>
+                                <p class="fw-bold fs-4 text-start ">$99.99 USD</p>
 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col rounded p-3">
+                        <div class="shadow rounded ">
+                            <img src="../img/BaldursGateIII.jpg" class="w-100 rounded-top " alt="">
+                            <div class="bg-white p-2 rounded-bottom border-top-orange">
+                                <h5 class="text-start ">Baldurg Gate III</h5>
+                                <p class="card-text text-truncate text-uppercase fw-bold th-blue"
+                                    style="max-width: 100%;">
+                                    GLOBAL
+                                </p>
+                                <p class="fw-bold fs-4 text-start ">$99.99 USD</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col rounded p-3">
+                        <div class="shadow rounded ">
+                            <img src="../img/BaldursGateIII.jpg" class="w-100 rounded-top " alt="">
+                            <div class="bg-white p-2 rounded-bottom border-top-orange">
+                                <h5 class="text-start ">Baldurg Gate III</h5>
+                                <p class="card-text text-truncate text-uppercase fw-bold th-blue"
+                                    style="max-width: 100%;">
+                                    GLOBAL
+                                </p>
+                                <p class="fw-bold fs-4 text-start ">$99.99 USD</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col rounded p-3">
+                        <div class="shadow rounded ">
+                            <img src="../img/BaldursGateIII.jpg" class="w-100 rounded-top " alt="">
+                            <div class="bg-white p-2 rounded-bottom border-top-orange">
+                                <h5 class="text-start ">Baldurg Gate III</h5>
+                                <p class="card-text text-truncate text-uppercase fw-bold th-blue"
+                                    style="max-width: 100%;">
+                                    GLOBAL
+                                </p>
+                                <p class="fw-bold fs-4 text-start ">$99.99 USD</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col rounded p-3">
+                        <div class="shadow rounded ">
+                            <img src="../img/BaldursGateIII.jpg" class="w-100 rounded-top " alt="">
+                            <div class="bg-white p-2 rounded-bottom border-top-orange">
+                                <h5 class="text-start ">Baldurg Gate III</h5>
+                                <p class="card-text text-truncate text-uppercase fw-bold th-blue"
+                                    style="max-width: 100%;">
+                                    GLOBAL
+                                </p>
+                                <p class="fw-bold fs-4 text-start ">$99.99 USD</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col rounded p-3">
+                        <div class="shadow rounded ">
+                            <img src="../img/BaldursGateIII.jpg" class="w-100 rounded-top " alt="">
+                            <div class="bg-white p-2 rounded-bottom border-top-orange">
+                                <h5 class="text-start ">Baldurg Gate III</h5>
+                                <p class="card-text text-truncate text-uppercase fw-bold th-blue"
+                                    style="max-width: 100%;">
+                                    GLOBAL
+                                </p>
+                                <p class="fw-bold fs-4 text-start ">$99.99 USD</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col rounded p-3">
+                        <div class="shadow rounded ">
+                            <img src="../img/BaldursGateIII.jpg" class="w-100 rounded-top " alt="">
+                            <div class="bg-white p-2 rounded-bottom border-top-orange">
+                                <h5 class="text-start ">Baldurg Gate III</h5>
+                                <p class="card-text text-truncate text-uppercase fw-bold th-blue"
+                                    style="max-width: 100%;">
+                                    GLOBAL
+                                </p>
+                                <p class="fw-bold fs-4 text-start ">$99.99 USD</p>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <footer class="text-body-secondary py-5">
+    <div class="bgh-darkest-blue">
         <div class="container">
-            <p class="mb-1">
-                <a href="#">Back to top</a>
-            </p>
-            <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-            <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-                    href="/docs/5.3/getting-started/introduction/">getting started guide</a>.</p>
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Buy</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">How to
+                                    buy?</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">List of
+                                    games</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>About Hanta</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About us</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact
+                                    us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Help</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Create a
+                                    ticket</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <img class="img-fluid mx-auto d-block" src="../img/logo.png" width="300" alt="">
+                        <span class="text-center d-block text-light fw-bold">© Hanta Store 2024</span>
+                    </div>
+                </div>
+            </footer>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-        crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+            crossorigin="anonymous"></script>
+        <script src="app.js"></script>
 </body>
 
 </html>
