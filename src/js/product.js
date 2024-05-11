@@ -120,21 +120,6 @@ function mostrandoProducto(data) {
     modalBody.appendChild(colImgModalThree)
     modalBody.appendChild(colImgModalFour)
 
-    // imagenes.map(img => {
-    //     const colModal = document.createElement('div');
-    //     colModal.classList.add('col')
-    //     colModal.innerHTML =
-    //         `
-    //         <a href="${img.path_full}"
-    //             target="_blank">
-    //             <img class="img-fluid rounded "
-    //                 src="${img.path_full}"
-    //                 alt="">
-    //         </a>
-    //     `
-    //     modalBody.appendChild(colModal)
-    // })
-
     const priceModal = document.querySelector('#price')
     priceModal.textContent = `${data.OUR_PRICE} USD`
 

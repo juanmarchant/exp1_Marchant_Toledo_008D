@@ -6,6 +6,10 @@
     font-family: 'Satoshi-Variable';
 }
 
+.btn-th-blue {
+    background-color: #244494;
+}
+
 .bgh-blue {
     background-color: #244494;
 }
@@ -18,7 +22,7 @@
     background-color: #001446;
 }
 
-.border-top-orange{
+.border-top-orange {
     border-top: 5px solid orange;
 }
 
@@ -38,9 +42,10 @@
     border: 1px solid white !important;
 }
 
-.searchHanta{
+.searchHanta {
     color: white !important;
 }
+
 .searchHanta::placeholder {
     color: white !important;
     font-weight: bold;
@@ -52,7 +57,7 @@
 }
 
 
-.th-orange{
+.th-orange {
     color: orange;
 }
 
@@ -87,22 +92,22 @@
     color: white !important;
 }
 
-.product{
-    background-color: white ;
+.product {
+    background-color: white;
 }
 
-.product:hover{
+.product:hover {
     background-color: #E9ECEF;
     transition: 0.7s;
     box-shadow: none !important;
     cursor: pointer;
 }
 
-.product:hover img{
+.product:hover img {
     filter: grayscale(75%);
 }
 
-.product:hover .price{
+.product:hover .price {
     color: #244494;
     transition: 0.7s;
 }
