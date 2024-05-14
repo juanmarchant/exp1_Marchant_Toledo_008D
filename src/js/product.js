@@ -56,10 +56,10 @@ function mostrandoProducto(data) {
     const portadaModal = document.querySelector('#portada');
     portadaModal.innerHTML =
         `
-    <img class="img-fluid w-100 mx-auto rounded shadow-lg "
-    src="${data.HEAD_IMAGE}"
-    alt="">
-    `
+        <img class="img-fluid w-100 mx-auto rounded shadow-lg "
+        src="${data.HEAD_IMAGE}"
+        alt="">
+        `
 
     const descriptionModal = document.querySelector('.modal-body #description');
     descriptionModal.innerHTML = data.DESCRIPTION
