@@ -20,29 +20,29 @@
             <div class="col shadow text-center p-3 border-3 rounded bg-light">
                 <img src="../img/logo.png" class="img-fluid w-50 text-center" alt="Hanta Store Logo">
 
-                <form class="mt-4">
+                <form class="mt-4" id="form">
 
                     <div class="mb-3">
                         <div class="form-floating mb-3 text-start">
-                            <input type="text" class="form-control" id="nameInput" placeholder="Full name">
+                            <input type="text" class="form-control" id="nameInput" placeholder="Full name"
+                                autocomplete="on">
                             <label for="nameInput">Full name</label>
                         </div>
 
                         <div class="form-floating mb-3 text-start">
-                            <input type="email" class="form-control" id="emailInput" placeholder="example@example.com">
+                            <input type="email" class="form-control" id="emailInput" placeholder="example@example.com"
+                                autocomplete="on">
                             <label for="nameInput">Email address</label>
-
-                            <span></span>
                         </div>
 
                         <div class="form-floating mb-3 text-start">
-                            <input type="password" class="form-control" id="passwordInput"
-                                placeholder="name@example.com">
+                            <input type="password" class="form-control" id="passwordInput" placeholder="Password"
+                                autocomplete="on">
                             <label for="passwordInput">Password</label>
                         </div>
 
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-primary bgh-th-blue">Create Account</button>
+                            <button type="submit" class="btn btn-primary bgh-th-blue " disabled>Create Account</button>
                         </div>
 
                         <div class="text-end mt-2">
