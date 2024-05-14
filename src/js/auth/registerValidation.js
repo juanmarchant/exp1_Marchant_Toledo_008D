@@ -1,13 +1,16 @@
 const nameInput = document.querySelector('#nameInput');
 const emailInput = document.querySelector('#emailInput');
 const passwordInput = document.querySelector('#passwordInput');
+const yearsCheckSelect = document.querySelector('#yearsCheckSelect');
+const showPassword = document.querySelector('#showPassword');
 const btnSubmit = document.querySelector('#form button[type="submit"]')
 const form = document.querySelector('#form');
 
 const registration = {
     name: '',
     email: '',
-    password: ''
+    password: '',
+    checkYears: ''
 }
 
 
@@ -20,9 +23,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     passwordInput.addEventListener('input', validatePasswordInput);
 
+    showPassword.addEventListener('click', revealPassword);
+
+    yearsCheckSelect.addEventListener('input', validateYearsCheckSelect);
+
     form.addEventListener('submit', checkForm);
 
 })
+
+
+const revealPassword = ({ target }) => {
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text'
+        showPassword.classList.add('text-decoration-line-through')
+        return;
+    }
+    passwordInput.type = 'password'
+    showPassword.classList.add('text-decoration-underline')
+    showPassword.classList.remove('text-decoration-line-through')
+}
 
 
 const validateNameInput = ({ target }) => {
@@ -63,10 +82,11 @@ const validateNameInput = ({ target }) => {
 };
 
 const validateEmailInput = ({ target }) => {
+    const regex = /^\S+@\S+\.\S+$/;
     const email = target.value.trim();
-    const isValid = email.includes('@');
+    const isValid = regex.test(email);
     const feedbackAlert = document.querySelector('#feedbackEmailInput');
-    const feedbackMessage = isValid ? 'Looks Good!' : 'The email should have @';
+    const feedbackMessage = isValid ? 'Looks Good!' : 'Enter a valid email ex: example@gmail.com';
 
     if (!feedbackAlert) {
         const feedback = document.createElement('div');
@@ -76,6 +96,7 @@ const validateEmailInput = ({ target }) => {
 
         emailInput.classList.remove('is-valid', 'is-invalid');
         emailInput.classList.add(isValid ? 'is-valid' : 'is-invalid');
+
 
 
         target.parentElement.appendChild(feedback);
@@ -100,7 +121,7 @@ const validateEmailInput = ({ target }) => {
 const validatePasswordInput = ({ target }) => {
     const passwordLength = target.value.trim().length;
     const feedbackAlert = document.querySelector('#feedbackPasswordInput');
-    const feedbackMessage = passwordLength >= 6 ? 'Looks Good!' : 'The password should have 6 or more characters';
+    const feedbackMessage = passwordLength >= 6 ? 'Looks Good!' : 'The password should have 6 or more characters and should match';
     const isValid = passwordLength >= 6;
 
     if (!feedbackAlert) {
@@ -114,8 +135,14 @@ const validatePasswordInput = ({ target }) => {
 
         registration['password'] = target.value
         validateForm()
+
         target.parentElement.appendChild(feedback);
     } else {
+
+        if (checkForm != target.value.trim()) {
+
+        }
+
         feedbackAlert.innerHTML = feedbackMessage;
         feedbackAlert.classList.remove(isValid ? 'invalid-feedback' : 'valid-feedback');
         feedbackAlert.classList.add(isValid ? 'valid-feedback' : 'invalid-feedback');
@@ -131,6 +158,47 @@ const validatePasswordInput = ({ target }) => {
         registration['password'] = ''
         validateForm()
     }
+}
+
+
+const validateYearsCheckSelect = ({ target }) => {
+
+
+    const feedbackAlert = document.querySelector('#feedbackYearsCheckSelect');
+    const isValid = target.checked;
+    const feedbackMessage = isValid ? 'Older Guy' : 'You must agree before submitting';
+
+
+    if (!feedbackAlert) {
+        const feedback = document.createElement('div');
+        feedback.classList.add(isValid ? 'valid-feedback' : 'invalid-feedback');
+        feedback.id = 'feedbackYearsCheckSelect';
+        feedback.innerHTML = feedbackMessage;
+
+        yearsCheckSelect.classList.remove('is-valid', 'is-invalid');
+        yearsCheckSelect.classList.add(isValid ? 'is-valid' : 'is-invalid');
+
+        registration['checkYears'] = target.checked
+        validateForm()
+        target.parentElement.appendChild(feedback);
+    } else {
+        feedbackAlert.innerHTML = feedbackMessage;
+        feedbackAlert.classList.remove(isValid ? 'invalid-feedback' : 'valid-feedback');
+        feedbackAlert.classList.add(isValid ? 'valid-feedback' : 'invalid-feedback');
+
+        yearsCheckSelect.classList.remove(isValid ? 'is-invalid' : 'is-valid');
+        yearsCheckSelect.classList.add(isValid ? 'is-valid' : 'is-invalid');
+
+    }
+
+    if (isValid) {
+        registration['checkYears'] = target.checked
+        validateForm()
+    } else {
+        registration['checkYears'] = ''
+        validateForm()
+    }
+
 }
 
 
