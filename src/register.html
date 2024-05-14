@@ -17,9 +17,11 @@
 
     <div class="container-fluid vh-100 d-flex justify-content-center align-items-center bgh-blue">
         <div class="row">
+
             <div class="col shadow text-center p-3 border-3 rounded bg-light">
                 <a href="./index.html"><img class="img-fluid w-50" src="../img/logo.png"
                     alt="Hanta Store"></a>
+
 
                 <form class="mt-4" id="form">
 
@@ -36,10 +38,25 @@
                             <label for="nameInput">Email address</label>
                         </div>
 
-                        <div class="form-floating mb-3 text-start">
-                            <input type="password" class="form-control" id="passwordInput" placeholder="Password"
-                                autocomplete="on">
-                            <label for="passwordInput">Password</label>
+                        <div class=" mb-3 text-start">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="passwordInput" placeholder="Password"
+                                    autocomplete="on">
+                                <label for="passwordInput">Password</label>
+                            </div>
+                            <a href="#" id="showPassword"><small>Show password</small></a>
+                        </div>
+
+
+
+                        <div class="col-12 mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="yearsCheckSelect"
+                                    aria-describedby="yearsCheckSelect" required>
+                                <label class="form-check-label text-start" for="yearsCheckSelect">
+                                    I'm over 18 years old
+                                </label>
+                            </div>
                         </div>
 
                         <div class="d-grid">
@@ -53,6 +70,49 @@
                     </div>
                 </form>
             </div>
+        </div>
+    </div>
+
+    <div class="bgh-darkest-blue">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Buy</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">How to
+                                    buy?</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">List of
+                                    games</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>About Hanta</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About us</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="./contact.html"
+                                    class="nav-link p-0 text-body-secondary">Contact
+                                    us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Help</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Create a
+                                    ticket</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <img class="img-fluid mx-auto d-block" src="../img/logo.png" width="300" alt="">
+                        <span class="text-center d-block text-light fw-bold">© Hanta Store 2024</span>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
 
